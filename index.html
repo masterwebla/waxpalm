@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Waxpalm</title>
+    <link rel="stylesheet" href="css/lib/html5-editor/bootstrap-wysihtml5.css" />
+    <link rel="stylesheet" href="css/lib/dropzone/dropzone.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar">
+    <!-- Preloader - style you can find in spinners.css -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
+        <!-- header  -->
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
+                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+                    </a>
+                </div>
+                <!-- Fin Logo -->
+            </nav>
+        </div>
+        <!-- Fin header -->
+        <!-- Left Sidebar  -->
+        <div class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <img src="images/perfil.jpg" class="hide-menu">
+                <!-- Menu-->
+                <nav class="sidebar-nav">                    
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li class="nav-label">MENU</li>                       
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-edit"></i><span class="hide-menu">Editar Perfil</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-id-card-o"></i><span class="hide-menu">Publicaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-book"></i><span class="hide-menu">Academia</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-money"></i><span class="hide-menu">Coins</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Gente</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Agenda</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-file-image-o"></i><span class="hide-menu">Galería</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-gears"></i><span class="hide-menu">Páginas</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-futbol-o"></i><span class="hide-menu">Gustos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-file"></i><span class="hide-menu">Archivos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-expanded="false"><i class="fa fa-handshake-o"></i><span class="hide-menu">Alianzas</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Fin Menu -->
+            </div>
+            <!-- Fin Sidebar scroll-->
+        </div>
+        <!-- End Left Sidebar  -->
+        <!-- Page wrapper  -->
+        <div class="page-wrapper">
+            <!-- top2 -->
+            <div class="row page-titles">
+                <div class="col-md-2 align-self-center">
+                    <h4>PUBLICACIONES</h4> </div>
+                <div class="col-md-10 align-self-center">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modaltxt">
+                      <i class="fa fa fa-plus-square-o fa-2x"></i>
+                    </button>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalfiles">
+                      <i class="fa fa-file-archive-o fa-2x"></i>
+                    </button>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalfiles">
+                      <i class="fa fa-camera fa-2x"></i>
+                    </button>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#modalfiles">
+                      <i class="fa fa-play-circle-o fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Fin top2 -->
+            <!-- Container fluid  -->
+            <div class="container-fluid">
+                <!-- VENTANAS MODALES -->
+                <!-- MODAL TEXTO -->
+                <div class="modal" id="modaltxt">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Publicar Texto</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label>Publicar texto, enlaces y/o capturas de pantallas</label>
+                                <textarea class="textarea_editor form-control" rows="15" placeholder="Ingresar texto ..." style="height:350px"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="publicar">Publicar en: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Amigos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Familia
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Mascotas
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 1
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 2
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="publicar">Privacidad: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Amigos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Familia
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Mascotas
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 1
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 2
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="publicar">Creative commons: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Atribución
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Atribución - Sin Derivar
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Atribución - No Comercial
+                                  </label>
+                                </div>
+                            </div>
+                        </form>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Publicar</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- MODAL ARCHIVOS -->
+                <div class="modal" id="modalfiles">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Publicar archivos</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="#" class="dropzone">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                        <div class="form-group">
+                                <label for="publicar">Publicar en: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Amigos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Familia
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Mascotas
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 1
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 2
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="publicar">Privacidad: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Amigos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Familia
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupos
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Mascotas
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 1
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Grupo 2
+                                  </label>
+                                </div>
+                            </div>
+
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Publicar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Contenido -->
+                <div class="row">
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                </div>
+                <div class="row">
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                    <!-- Publicacion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="images/usuario.jpg" class="img-circle">
+                                </div>
+                                <div class="col-6">
+                                    <h4 style="margin-top: 12px;color: #98B870"><strong>Yo Bitch</strong></h4>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <h5 style="margin-top: 12px">69m</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <img src="images/publicacion.jpg" class="img-responsive" style="margin: 0px">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Gato Pirata</h4>
+                                    <p>Pirate costume made for cats. All sizes available through our website</p>
+                                </div>                                    
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-3"><i class="fa fa-heart-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-calendar-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-comment-o"></i><br>34</div>
+                                <div class="col-3"><i class="fa fa-ban"></i><br>34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin - Publicacion -->
+                </div>
+                <!-- Fin Contenido Pagina -->
+            </div>
+            <!-- End Container fluid  -->
+            <!-- footer -->
+            <footer class="footer"> © 2019 All rights reserved. WaxPalm</footer>
+            <!-- End footer -->
+        </div>
+        <!-- End Page wrapper  -->
+    </div>
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="js/lib/html5-editor/wysihtml5-0.3.0.js"></script>
+    <script src="js/lib/html5-editor/bootstrap-wysihtml5.js"></script>
+    <script src="js/lib/html5-editor/wysihtml5-init.js"></script>
+    <!--Custom JavaScript -->
+    <!-- Amchart -->
+     <script src="js/lib/morris-chart/raphael-min.js"></script>
+    <script src="js/lib/morris-chart/morris.js"></script>
+    <script src="js/lib/morris-chart/dashboard1-init.js"></script>
+
+	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/prism.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <!-- scripit init-->
+    <script src="js/lib/calendar-2/pignose.init.js"></script>
+
+    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+
+    <!-- scripit init-->
+    <script src="js/scripts.js"></script>
+    <script src="js/lib/dropzone/dropzone.js"></script>
+</body>
+</html>
